@@ -1,8 +1,8 @@
 public class Person {
-    private String name;
-    private int age;
-    private int height;
-    private int stamina;
+    protected String name;
+    protected int age;
+    protected int height;
+    protected int stamina;
 
     public Person(String name, int age, int height, int stamina) {
         this.name = name;
@@ -24,10 +24,16 @@ public class Person {
     }
 
     public void run() {
+
         stamina--;
     }
     public void sleep() {
+
         stamina += 12;
+    }
+
+    public void grow(int size) {
+        height += size;
     }
 
     public boolean isMajor() {

@@ -13,7 +13,7 @@ public class Dog {
 
     private void bark(int times, String sound) {
         for (int i=0; i<times; i++) {
-            System.out.println("Woof!");
+            System.out.print("Woof!");
         }
     }
 }
