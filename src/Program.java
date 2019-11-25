@@ -1,27 +1,23 @@
 public class Program {
     public static void main(String[] args) {
-        Person alex = new Person();
-        alex.name = "Alexandru";
-        alex.age = 20;
-        alex.height = 175;
-        alex.age++;
-        alex.stamina = 10;
+        Person alex = new Person("Alexandru", 20, 175, 10);
 
-        System.out.println(alex.name + " are " + alex.age + " de ani");
+
+        System.out.println(alex.getName() + " are " + alex.getAge() + " de ani");
 
         alex.run();
         alex.run();
         alex.run();
-        System.out.println(alex.name + " are energia " + alex.stamina);
+        System.out.println(alex.getName() + " are energia " + alex.getStamina());
         alex.sleep();
-        System.out.println(alex.name + " are energia " + alex.stamina);
+        System.out.println(alex.getName() + " are energia " + alex.getStamina());
 
         if (alex.isMajor()) {
-            System.out.println(alex.name + " drinks beer");
+            System.out.println(alex.getName() + " drinks beer");
         }
 
         Dog lessie = new Dog();
         lessie.size = 20;
-        lessie.bark();
+        lessie.bark(10);
     }
 }

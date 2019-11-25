@@ -1,13 +1,19 @@
 public class Dog {
     int size;
 
-    public void bark() {
+    public void bark(int times) {
         if (size > 60) {
-            System.out.println("Woof! Woof!");
+            bark(times, "Woof!");
         } else if (size > 14) {
-            System.out.println("Ruff! Ruff!");
+            bark(times, "Ruff!");
         } else {
-            System.out.println("Yip! Yip!");
+            bark(times, "Yip!");
+        }
+    }
+
+    private void bark(int times, String sound) {
+        for (int i=0; i<times; i++) {
+            System.out.println("Woof!");
         }
     }
 }
