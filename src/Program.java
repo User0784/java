@@ -1,5 +1,6 @@
 public class Program {
     public static void main(String[] args) {
+
         Person alex = new Person("Alexandru", 20, 175, 10);
 
         Person andrei = new Student("Andrei", 24, 180, 100, "A");
